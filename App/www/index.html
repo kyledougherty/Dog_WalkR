@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ted's Walking Dashboard">
+  <meta name="author" content="Kyle Dougherty">
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional: Add favicon -->
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title> Ted's Walking Dashboard </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="shared/shiny.css"/>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- shiny stuff
+        ================================================== -->
+    {{ headContent() }}
+    
+    <style>
+      
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About Ted</a></li>
+                    <li><a class="smoothscroll"  href="#walkstats" title="walkstats">Walk Stats</a></li>
+                    <li><a class="smoothscroll"  href="#walks" title="walks">Walks</a></li>
+                    <li><a class="smoothscroll"  href="#homerange" title="homerange">Home Range</a></li>
+                    <li><a class="smoothscroll"  href="#peepees" title="peepees">PeePees</a></li>
+                </ul>
+
+            </div> 
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+    <!-- home -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/Ted_Looking_Left.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+      
+      <div class="overlay"></div>
+      <div class="shadow-overlay"></div>
+      <div style="
+        position: absolute; 
+        top: 0; left: 0; 
+        width: 100%; height: 100%;  
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 10%,
+          rgba(0, 0, 0, 0.4) 20%,
+          rgba(0, 0, 0, 0.8) 30%,
+          rgba(0, 0, 0, 0.8) 40%,
+          rgba(0, 0, 0, 0.8) 70%,
+          rgba(0, 0, 0, 0.8) 80%,
+          rgba(0, 0, 0, 0.8) 90%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        z-index: 0;
+        pointer-events: none;">
+      </div>
+      
+      <subsection>
+        <div class="home-content">
+          <div class="row home-content__main">
+            <h1>Ted.</h1>
+          </div>
+
+        <div class="home-content__line"></div>
+
+      </subsection>
+    
+      <subsection id="about" class="s-about" style="background-color: #f0f0f0;">
+        
+        <div style="height: 600px;"></div>
+        
+        <h1 class="display-1" style = "text-align: center;" data-aos="fade-up" data-aos-delay="1000"> About Ted </h1>
+        
+        <div data-aos="fade-up" data-aos-delay="1000">
+        
+        <h4 style="color: white; text-align: center; max-width: 80%; margin: auto;">
+          We adopted Ted from Muddy Paws Second Chance Rescue on October 22nd, 2022, who rescued him and his 10 siblings from Oklahoma.
+        </h4>
+        
+        <div style="height: 25px;"></div>
+          <div class="image-container" style="text-align: center; overflow: visible;">
+            <img src="images/Ted_Puppy.png" alt="Ted's Image" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      
+        <div style="height: 100px;"></div>
+      
+        <div data-aos="fade-up" data-aos-delay="400">
+        
+          <h4 style="color: white; text-align: center; max-width: 80%; margin: auto;" >
+          He’s a Belgian Malinois mix who loves going on walks, where he happily sniffs and pees on everything in sight. 
+          </h4>
+        
+          <div style="height: 25px;"></div>
+        
+          <div class="image-container" style="text-align: center; overflow: visible;">
+            <img src="images/Embark_Rounded.png" alt="Ted's Image" style="max-width: 100%; height: auto;">
+          </div>
+        
+        </div>
+      
+        <div style="height: 100px;"></div>
+      
+        <div data-aos="fade-up" data-aos-delay="400">
+      
+          <h4 style="color: white; text-align: center; max-width: 80%; margin: auto;">
+            He’s always up for an adventure—especially if it includes a stop for ice cream.
+          </h4>
+        
+          <div style="height: 25px;"></div>
+      
+          <div style="text-align: center;">
+            <video controls autoplay muted loop playsinline width="640" height="360">
+              <source src="images/Ted_Ice_Cream.mp4" type="video/mp4">
+            </video>
+          </div>
+        
+        </div>
+      
+    </subsection>
+    
+    <div style="height: 400px;"></div>
+
+    <!-- Basic Stats -->
+    <subsection id='walkstats' class="s-about">
+
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
+          <div class="col-full">
+              <h1 class="display-1 display-1--light">
+                Ted and I have been on <br> 
+                {{number_of_walks}} <br>
+                walks since <br>
+                {{first_walk}}
+                </h1>
+          </div>
+      </div> 
+
+      <div class="row about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+          <div class="col-block stats__col">
+            <div class="stats__count"> {{total_time}} </div>
+            <h5 style="color: white"> Hours Walked</h5>
+          </div>
+            
+          <div class="col-block stats__col">
+            <div class="stats__count"> {{total_distance}} </div>
+            <h5 style="color: white"> Miles Walked</h5>
+          </div>
+            
+          <div class="col-block stats__col">
+            <div class="stats__count"> {{number_of_peepees}} </div>
+            <h5 style="color: white"> PeePees Logged</h5>
+          </div>
+            
+          <div class="col-block stats__col">
+            <div class="stats__count"> {{number_of_poopoos}} </div>
+            <h5 style="color: white"> PooPoos Logged (ha, logged)</h5>
+          </div>
+
+      </div> 
+        
+    </subsection> 
+    
+    <!-- Walk Location Section -->
+    <subsection id="walks" class="s-home target-section">
+    
+      <div class="home-content">
+        <div class="row home-content__main">
+            
+          <h1 class="display-1 display-1--light" style="text-align: center;"> Do You Wanna Go On a Walkie? </h1>
+            
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+            I track our walks using three iOS shortcuts that I created: 
+          </h4>
+          
+          <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <div class="image-container" style="text-align: center; overflow: visible;" data-aos="fade-up" data-aos-delay="600">
+              <img src="images/Log_Walking_Rounded.png" style="max-width: 100%; height: auto;">
+              <h4 style="color: white"> Logs our location once per second </h4>
+            </div>
+      
+            <div class="image-container" style="text-align: center; overflow: visible;" data-aos="fade-up" data-aos-delay="600">
+              <img src="images/Log_PeePee_Rounded.png" style="max-width: 100%; height: auto;">
+              <h4 style="color: white"> Logs "PeePee" location when pressed </h4>
+            </div>
+        
+            <div class="image-container" style="text-align: center; overflow: visible;" data-aos="fade-up" data-aos-delay="600">
+              <img src="images/Log_PooPoo_Rounded.png" style="max-width: 100%; height: auto;">
+              <h4 style="color: white"> Logs "PooPoo" location when pressed </h4>
+            </div>
+          </div>
+          
+          <br><br>
+          
+          <div class="leaflet_map" style="height: 100%; width: 120%; margin-left: -10%;" data-aos="fade-up" data-aos-delay="1200"> 
+            {{walk_location_map}}
+          </div>
+      
+        </div>
+          
+      </div>
+      
+    </subsection> 
+    
+    <!-- Home Range Section -->
+    <subsection id="homerange" class="s-home target-section">
+    
+      <div class="home-content">
+
+        <!-- Main Text Content -->
+        <div class="row home-content__main">
+            
+          <h1 class="display-1 display-1--light" style="text-align: center;">
+            Ted's Home Range
+          </h1>
+            
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+            A home range is the area an animal uses in its normal activities of gathering food, mating, and caring for their offspring. 
+            Ted gets fed at home and is fixed, so this isn’t really a true home range. 
+            But the polygon in the map below shows what his home range might look like based on the areas we normally walk.
+          </h4>
+            
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="900">
+            Home ranges also exclude “occasional sallies” outside the areas an animal typically uses. 
+            So if Ted and I take a long walk out of the neighborhood to an area that we don't normally go, the adaptive local convex hull (a-LoCoH) home range estimator will leave those locations out.
+          </h4>
+            
+          <br>
+            
+        <div class="leaflet_map" style="height: 100%; width: 120%; margin-left: -10%;" data-aos="fade-up" data-aos-delay="1200"> 
+          {{home_range_map}}
+        </div>
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1 display-1--light">
+                  Ted's Home Range Covers <br>
+                  {{home_range_area}} <br>
+                  Square Miles<br>
+                  <br> 
+                  For reference, that's about: 
+                  </h1>
+            </div>
+        </div> 
+        
+        <div class="row about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up" data-aos-delay="600">
+          
+          <div class="col-block stats__col">
+            <h1 style="color: white;"> {{red_fox_relative_home_range_size}}% </h1>
+            <h5 style="color: white;"> of a <br> Red Fox's <br> Home Range </h5>
+          </div>
+          
+          <div class="col-block stats__col">
+            <h1 style="color: white;"> {{mountain_lion_relative_home_range_size}}% </div>
+            <h5 style="color: white;"> of an <br> Adult Male Mountain Lion's <br> Home Range </h5>
+          </div>
+            
+        </div>
+
+    </subsection>
+    
+    <!-- PeePee Section -->
+    <subsection id="peepees" class="s-home target-section">
+      
+      <div class="home-content">
+        
+        <div class="row home-content__main">
+        
+          <h1 class="display-1 display-1--light" style="text-align: center;">
+            Where Does Ted Like to Pee?
+          </h1>
+            
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+            Ted communicates by leaving scent marks, usually through peeing. 
+            These marks carry information about his identity and when he was there, 
+            allowing other dogs to detect his recent activity, recognize him, 
+            and track which areas he frequently visits.
+          </h4>
+          
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+             
+            The map below shows where Ted pees (and poops). If he is peeing to mark what he considers his territory, we can 
+            see how that territory might appear to other dogs in the neighborhood. 
+            In ecology, an animal's territory is the portion of their home range that they actively defend.
+            So it makes sense that Ted's territory is smaller than his home range. 
+          </h4>
+          
+          <div class="leaflet_map" style="height: 100%; width: 120%; margin-left: -10%;" data-aos="fade-up" data-aos-delay="1200"> 
+          {{peepee_map}}
+          </div>
+          
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+            But is he actually defending his territory? Or does he just have to pee?
+          </h4>
+          
+          <div class="ggplot_container" style="width: 100%; text-align: center;" data-aos="fade-up" data-aos-delay="1300">
+            {{peepee_distance_from_home}}
+            {{peepee_time_from_start}}
+          </div>
+          
+          <h4 style="color: white; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+            As we keep walking and logging peepee locations I'll be able to model whether he: <br>
+            1) Pees closer to home <br>
+            2) Pees earlier on in our walks <br>
+            3) Pee in specific locations
+          </h4>
+          
+          <div class="image-container" style="text-align: center; overflow: visible;" data-aos="fade-up" data-aos-delay="600">
+            <img src="images/Ted_Hydrant.jpg" style="max-width: 100%; height: auto;">
+          </div>
+          
+          
+        </div>
+    </div>
+    
+    </subsection>
+    
+    </section>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 1000, // duration of the animation
+        once: true, // animation happens only once
+        offset: 200, // trigger point for the animation
+        });
+        })
+
+</body>
+
+</html>

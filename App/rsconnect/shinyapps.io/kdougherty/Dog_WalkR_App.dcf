@@ -1,0 +1,13 @@
+name: Dog_WalkR_App
+title: Dog_WalkR_App
+username: kdougherty
+account: kdougherty
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14709818
+bundleId: 10249050
+url: https://kdougherty.shinyapps.io/Dog_WalkR_App/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Local_Data_Preparation.R|Data
