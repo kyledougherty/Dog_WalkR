@@ -70,4 +70,5 @@ server <- function(input, output) {
 }
 
 rsconnect::writeManifest()
+
 shinyApp(ui = ui, server = server)
