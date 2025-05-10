@@ -2,7 +2,7 @@ library(tidyverse)
 library(sf)
 library(googledrive)
 
-setwd("/home/kyle/Documents/Dog_WalkR/Dog_WalkR_App/")
+setwd("App")
 
 source("https://raw.githubusercontent.com/kyledougherty/CougR/refs/heads/main/a_LoCoH_HR_Function.R")
 
