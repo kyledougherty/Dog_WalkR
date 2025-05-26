@@ -107,7 +107,7 @@ Home_Range <- a_LoCoH_HR(Walk_Location_Data %>%
                                   CRS = 32614) %>%
                            st_transform(32614),
                          min_days = 0,
-                         iso_levels = c(0.99))
+                         iso_levels = c(0.95))
 
 home_range_area = round(as.numeric(Home_Range$Area)/2.59e6, 2)
 red_fox_home_range_area = round(2.9/2.59, 2)
